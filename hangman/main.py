@@ -62,7 +62,7 @@ while current_incorrect_guesses < num_of_incorrect_guesses and False in answer_g
 
         # Check if letter is in the puzzle.
         if letter in answer: 
-            for current_answer_character in range(len(answer)):
+            for current_answer_index in range(len(answer)):
                 if letter == answer[current_answer_index]:
                     answer_guessed[current_answer_index] = True
         else:
